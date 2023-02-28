@@ -1,0 +1,9 @@
+{
+  "platforms": ["ios", "android", "web"],
+  "ios": {
+    "modules": ["ReactNativeCurrencyLocalizationModule"]
+  },
+  "android": {
+    "modules": ["expo.community.modules.currencylocalization.ReactNativeCurrencyLocalizationModule"]
+  }
+}
