@@ -1,4 +1,4 @@
-export declare function getLocalizedCurrencyName(locale: string, currencyCode: string): {
+export declare function getLocalizedCurrency(locale: string, currencyCode: string): {
     name: string;
     symbol: string;
 };

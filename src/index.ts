@@ -1,10 +1,10 @@
 import ReactNativeCurrencyLocalizationModule from "./ReactNativeCurrencyLocalizationModule";
 
-export function getLocalizedCurrencyName(
+export function getLocalizedCurrency(
   locale: string,
   currencyCode: string
 ): { name: string, symbol: string } {
-  return ReactNativeCurrencyLocalizationModule.getLocalizedCurrencyName(
+  return ReactNativeCurrencyLocalizationModule.getLocalizedCurrency(
     locale,
     currencyCode
   );

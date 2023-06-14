@@ -2,19 +2,19 @@ import { Text, View } from "react-native";
 import * as ReactNativeCurrencyLocalization from "react-native-currency-localization";
 
 export default function App() {
-  const usdUSA = ReactNativeCurrencyLocalization.getLocalizedCurrencyName(
+  const usdUSA = ReactNativeCurrencyLocalization.getLocalizedCurrency(
     "en-US",
     "USD"
   )
-  const usdCanada = ReactNativeCurrencyLocalization.getLocalizedCurrencyName(
+  const usdCanada = ReactNativeCurrencyLocalization.getLocalizedCurrency(
     "en-CA",
     "USD"
   )
-  const usdGerman = ReactNativeCurrencyLocalization.getLocalizedCurrencyName(
+  const usdGerman = ReactNativeCurrencyLocalization.getLocalizedCurrency(
     "de-DE",
     "USD"
   )
-  const vndUSA = ReactNativeCurrencyLocalization.getLocalizedCurrencyName(
+  const vndUSA = ReactNativeCurrencyLocalization.getLocalizedCurrency(
     "en-US",
     "VND"
   )

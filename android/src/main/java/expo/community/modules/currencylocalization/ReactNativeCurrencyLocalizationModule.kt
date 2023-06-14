@@ -8,7 +8,7 @@ class ReactNativeCurrencyLocalizationModule : Module() {
   override fun definition() = ModuleDefinition {
     Name("ReactNativeCurrencyLocalization")
 
-    Function("getLocalizedCurrencyName") { locale: String, currencyCode: String ->
+    Function("getLocalizedCurrency") { locale: String, currencyCode: String ->
       val localeObject = if (locale.contains("-")) {
         Locale(locale.split('-')[0], locale.split('-')[1])
       } else {
