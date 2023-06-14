@@ -77,6 +77,13 @@ target 'reactnativecurrencylocalizationexample' do
         end
       end
     end
+      
+    # NOTE: Change IPHONEOS_DEPLOYMENT_TARGET for all pods to 13.0.
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+      end
+    end
   end
 
   post_integrate do |installer|
