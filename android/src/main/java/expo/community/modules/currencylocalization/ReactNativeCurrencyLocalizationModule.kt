@@ -15,7 +15,10 @@ class ReactNativeCurrencyLocalizationModule : Module() {
         Locale(locale)
       }
       val currency: Currency = Currency.getInstance(currencyCode)
-      return@Function currency.getDisplayName(localeObject)
+      return@Function mapOf(
+        "name" to currency.getDisplayName(localeObject),
+        "symbol" to currency.getSymbol(localeObject)
+      )
     }
   }
 }
